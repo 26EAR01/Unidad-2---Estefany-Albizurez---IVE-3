@@ -2,18 +2,33 @@
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("Digite una nota: ");
-        int nota = Convert.ToInt32 (Console.ReadLine());
+        double nota1, nota2, nota3, nota4, nota5, promedio;
 
-        if (nota >= 0 && nota < 60)
-            Console.WriteLine("Deficiente");
-        if (nota >= 60 && nota < 70)
-            Console.WriteLine("REgular");
-        if (nota >= 70 && nota < 80)
-            Console.WriteLine("Bien");
-        if (nota >= 80 && nota < 90)
-            Console.WriteLine("Muy bien ");
-        if (nota >= 90 && nota <= 100)
-            Console.WriteLine("Excelente");
+        Console.WriteLine("Ingrese la nota 1:");
+        nota1 = Convert.ToDouble(Console.ReadLine());
+
+        Console.WriteLine("Ingrese la nota 2:");
+        nota2 = Convert.ToDouble(Console.ReadLine());
+
+        Console.WriteLine("Ingrese la nota 3:");
+        nota3 = Convert.ToDouble(Console.ReadLine());
+
+        Console.WriteLine("Ingrese la nota 4:");
+        nota4 = Convert.ToDouble(Console.ReadLine());
+
+        Console.WriteLine("Ingrese la nota 5:");
+        nota5 = Convert.ToDouble(Console.ReadLine());
+
+        promedio = (nota1 + nota2 + nota3 + nota4 + nota5) / 5;
+
+        if (promedio >= 60)
+        {
+            Console.WriteLine("El alumno APRUEBA");
+        }
+        else
+        {
+            Console.WriteLine("El alumno REPRUEBA");
+
+        }
     }
 }
